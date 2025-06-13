@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página Web HTML5</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- HEADER - Encabezado -->
+    <header>
+        <h1>Bienvenido a Mi Página Web</h1>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#acerca">Acerca de</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- MAIN - Contenido principal -->
+    <main>
+        <!-- SECTION 1 - Introducción -->
+        <section id="inicio">
+            <h2>Sobre Mí</h2>
+            <p>¡Hola! Soy <strong>estudiante de desarrollo web</strong> y esta es mi primera página creada con <em>HTML5 y CSS</em>.</p>
+            
+            <!-- IMAGEN -->
+            <img src="assets/img/imagen1.jpg" alt="Imagen de presentación" width="300">
+        </section>
+
+        <!-- SECTION 2 - Mis Habilidades -->
+        <section>
+            <h2>Mis Habilidades</h2>
+            <h3>Tecnologías que estoy aprendiendo:</h3>
+            
+            <!-- LISTA DESORDENADA -->
+            <ul>
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>JavaScript</li>
+                <li>Git y GitHub</li>
+            </ul>
+
+            <!-- LISTA ORDENADA -->
+            <h3>Mis objetivos para este año:</h3>
+            <ol>
+                <li>Dominar HTML y CSS</li>
+                <li>Aprender JavaScript</li>
+                <li>Crear mi primer proyecto complejo</li>
+            </ol>
+        </section>
+
+        <!-- SECTION 3 - Video -->
+        <section>
+            <h2>Video Presentación</h2>
+            <p>⚽ Mi pasión por el fútbol - Video de jugadas épicas:</p>
+            
+            <!-- Videos de fútbol que funcionan -->
+            <video controls width="400" style="max-width: 100%; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" poster="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjIyNSIgdmlld0JveD0iMCAwIDQwMCAyMjUiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSI0MDAiIGhlaWdodD0iMjI1IiBmaWxsPSIjMDA4MDAwIi8+Cjx0ZXh0IHg9IjIwMCIgeT0iMTEyLjUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIyNCIgZmlsbD0id2hpdGUiIHRleHQtYW5jaG9yPSJtaWRkbGUiPuKavcKgRsO6dGJvbCDwn5qyPC90ZXh0Pgo8L3N2Zz4K">
+                <!-- Video principal: Video de fútbol libre -->
+                <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4" type="video/mp4">
+                <!-- Video alternativo de deportes -->
+                <source src="https://sample-videos.com/zip/10/mp4/SampleVideo_640x360_2mb.mp4" type="video/mp4">
+                <!-- Video de respaldo -->
+                <source src="https://www.learningcontainer.com/wp-content/uploads/2020/05/sample-mp4-file.mp4" type="video/mp4">
+                Tu navegador no soporta videos HTML5.
+            </video>
+            
+            <!-- Iframe alternativo con video de fútbol embed -->
+            <div style="margin-top: 20px;">
+                <p><strong>📺 Video alternativo - Highlights de fútbol:</strong></p>
+                <iframe width="400" height="225" 
+                        src="https://player.vimeo.com/video/231902078?autoplay=0&loop=1&muted=1" 
+                        style="max-width: 100%; border-radius: 10px; border: none;"
+                        title="Football Skills Video" 
+                        allow="autoplay; fullscreen; picture-in-picture"
+                        allowfullscreen>
+                </iframe>
+            </div>
+            
+            <div style="margin-top: 15px; padding: 15px; background: #f0f8ff; border-radius: 8px; border-left: 4px solid #007acc;">
+                <p style="margin: 0; font-style: italic; color: #333;">
+                    🏆 <strong>¿Sabías que?</strong> Lionel Messi ha ganado 8 Balones de Oro y es considerado por muchos como el mejor jugador de la historia del fútbol. ¡Una verdadera inspiración! ⚽✨
+                </p>
+            </div>
+        </section>
+
+        <!-- SECTION 4 - Tabla -->
+        <section>
+            <h2>Mis Proyectos</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Proyecto</th>
+                        <th>Tecnología</th>
+                        <th>Estado</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Página Personal</td>
+                        <td>HTML5 + CSS</td>
+                        <td>En desarrollo</td>
+                    </tr>
+                    <tr>
+                        <td>Calculadora</td>
+                        <td>JavaScript</td>
+                        <td>Planeado</td>
+                    </tr>
+                    <tr>
+                        <td>Blog Personal</td>
+                        <td>HTML + CSS + JS</td>
+                        <td>Idea</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- ARTICLE -->
+        <article>
+            <h2>Mi Experiencia Aprendiendo</h2>
+            <p>Comenzar en el mundo del desarrollo web ha sido <strong>emocionante y desafiante</strong>. Cada día aprendo algo nuevo y me siento más <em>confiado</em> con el código.</p>
+            
+            <!-- ENLACE EXTERNO -->
+            <p>Te recomiendo visitar <a href="https://developer.mozilla.org/es/" target="_blank">MDN Web Docs</a> para aprender más sobre desarrollo web.</p>
+        </article>
+
+        <!-- SECTION 5 - Formulario de Contacto -->
+        <section id="contacto">
+            <h2>Contáctame</h2>
+            <form>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                
+                <label for="correo">Correo electrónico:</label>
+                <input type="email" id="correo" name="correo" required>
+                
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="4"></textarea>
+                
+                <button type="submit">Enviar mensaje</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2024 Mi Página Web. Creado con HTML5 y CSS3.</p>
+    </footer>
+</body>
+</html>
